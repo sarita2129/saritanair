@@ -83,10 +83,10 @@ $(".imgfoodie").hover(function(){
     $(this).find('.content').first().hide();
 });
 $('#download').on('click', function(e) {
-  // e.preventDefault();
+  e.preventDefault();
   // this.href = "/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf";
   // this.download = 'SaritaNairResume.pdf';
-  window.open("images/SaritaNairResume.pdf", "_blank")
+  window.open("https://sarita2129.github.io/saritanair/images/SaritaNairResume.pdf", "_blank")
 });
 $('#linkedin').on('click', function(e) {
   // e.preventDefault();
