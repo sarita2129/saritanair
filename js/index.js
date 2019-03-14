@@ -86,7 +86,7 @@ $('#download').on('click', function(e) {
   // e.preventDefault();
   // this.href = "/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf";
   // this.download = 'SaritaNairResume.pdf';
-  window.open("https://sarita2129.github.io/saritanair/images/SaritaNairResume.pdf", "_blank")
+  window.open("/images/SaritaNairResume.pdf", "_blank")
 });
 $('#linkedin').on('click', function(e) {
   // e.preventDefault();
