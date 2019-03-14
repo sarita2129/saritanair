@@ -95,10 +95,24 @@ $('#linkedin').on('click', function(e) {
   window.open("https://www.linkedin.com/in/saritanair29/", "_blank")
 });
 $('#github').on('click', function(e) {
-  // e.preventDefault();
-  // this.href = "/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf";
-  // this.download = 'SaritaNairResume.pdf';
   window.open("https://github.com/sarita2129", "_blank")
+});
+$('#email').on('click', function(e) {
+  window.open('mailto:nairsarita2129@gmail.com');
+  //or with subject using below
+  // window.open('mailto:nairsarita2129@gmail.com?subject=subject&body=body');
+});
+$('#tictactoe').on('click', function(e) {
+  window.open("https://github.com/sarita2129/projectZero", "_blank")
+});
+$('#gostyle').on('click', function(e) {
+  window.open("https://github.com/sarita2129/gostyle", "_blank")
+});
+$('#reelsplex').on('click', function(e) {
+  window.open("https://github.com/sarita2129/movie_booking_client", "_blank")
+});
+$('#foodie').on('click', function(e) {
+  window.open("https://github.com/sarita2129/Food_delivery_client", "_blank")
 });
 
 });
