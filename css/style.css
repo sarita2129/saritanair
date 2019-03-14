@@ -194,6 +194,47 @@ body {
   transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s, -webkit-transform 0.6s 0.7s;
   will-change: transform, width, opacity;
 }
+.el-new {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24%;
+  /* width: 19.2%; */
+  /* height: 100%; */
+  background: #252525;
+  transition: width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s, -webkit-transform 0.6s 0.7s;
+  transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
+  transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s, -webkit-transform 0.6s 0.7s;
+  will-change: transform, width, opacity;
+}
+.el-new:not(.s--active) {
+  cursor: pointer;
+}
+.el-new.s--active .el__bg:before {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+.el-new.s--active .el__content {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s 1.4s;
+}
+.el-new.s--active .el__close-btn:before, .el-new.s--active .el__close-btn:after {
+  opacity: 1;
+}
+.el-new.s--active .el__close-btn:before {
+  transition: all 0.3s 1.4s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  -webkit-transform: rotate(45deg) translateX(0);
+          transform: rotate(45deg) translateX(0);
+}
+.el-new a{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+}
 .el:not(.s--active) {
   cursor: pointer;
 }
@@ -243,6 +284,8 @@ body {
 }
 .contact a{
   text-decoration: none;
+  color: #FFF !important;
+  margin-left: 10px;
 }
 .cont.s--inactive .el__bg:before {
   -webkit-transform: translate3d(0, -100%, 0) scale(1.2);
@@ -470,6 +513,8 @@ body {
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
   background-color: #fccc6c;
+  /* background-color: #fccc6c; */
+
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg"); */
 }
 .el:nth-child(2) {
@@ -496,6 +541,7 @@ body {
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
   background-color: #fccc6c;
+  /* background-color: #fccc6c; */
 
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg"); */
 }
@@ -525,7 +571,7 @@ body {
   background-color: #67b6F7;
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg"); */
 }
-.el:nth-child(4) {
+.el-new {
   -webkit-transform: translate3d(315.625%, 0, 0);
           transform: translate3d(315.625%, 0, 0);
   -webkit-transform-origin: 365.625% 50%;
@@ -539,14 +585,14 @@ body {
   transition: transform 0.95s, opacity 0.95s;
   transition: transform 0.95s, opacity 0.95s, -webkit-transform 0.95s;
 }
-.el:nth-child(4) .el__inner {
+.el-new .el__inner {
   transition-delay: 0.3s;
 }
-.el:nth-child(4) .el__bg {
+.el-new .el__bg {
   -webkit-transform: translate3d(-57.6%, 0, 0);
           transform: translate3d(-57.6%, 0, 0);
 }
-.el:nth-child(4) .el__bg:before {
+.el-new .el__bg:before {
   transition-delay: 0.3s;
   background-color: #f78b59;
   /* background-color: #f77542; */

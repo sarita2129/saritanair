@@ -1,5 +1,7 @@
 var $cont = document.querySelector('.cont');
 var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+var $elnew = document.querySelector('.el-new');
+
 var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
 var $imgtictacdiv = document.querySelector('.imgtictactoe');
 // alert('1');
@@ -10,6 +12,8 @@ $elsArr.forEach(function($el) {
   $el.classList.add('el-height');
 
 });
+$elnew.classList.add('el-height');
+
 $elsArr.forEach(function($el) {
   $el.addEventListener('click', function() {
     if (this.classList.contains('s--active')) return;
@@ -78,4 +82,23 @@ $(".imgfoodie").hover(function(){
     // $('.content').hide();
     $(this).find('.content').first().hide();
 });
-})
+$('#download').on('click', function(e) {
+  // e.preventDefault();
+  // this.href = "/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf";
+  // this.download = 'SaritaNairResume.pdf';
+  window.open("/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf", "_blank")
+});
+$('#linkedin').on('click', function(e) {
+  // e.preventDefault();
+  // this.href = "/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf";
+  // this.download = 'SaritaNairResume.pdf';
+  window.open("https://www.linkedin.com/in/saritanair29/", "_blank")
+});
+$('#github').on('click', function(e) {
+  // e.preventDefault();
+  // this.href = "/Users/saritanair/WDI/Projects/Backup/Portfolio/images/SaritaNairResume.pdf";
+  // this.download = 'SaritaNairResume.pdf';
+  window.open("https://github.com/sarita2129", "_blank")
+});
+
+});
