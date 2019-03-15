@@ -102,17 +102,28 @@ $('#email').on('click', function(e) {
   //or with subject using below
   // window.open('mailto:nairsarita2129@gmail.com?subject=subject&body=body');
 });
-$('#tictactoe').on('click', function(e) {
+$('#tictactoegit').on('click', function(e) {
   window.open("https://github.com/sarita2129/projectZero", "_blank")
 });
-$('#gostyle').on('click', function(e) {
+$('#tictactoe').on('click', function(e) {
+  window.open("https://sarita2129.github.io/projectZero/login.html", "_blank")
+});
+$('#gostylegit').on('click', function(e) {
   window.open("https://github.com/sarita2129/gostyle", "_blank")
 });
-$('#reelsplex').on('click', function(e) {
+$('#gostyle').on('click', function(e) {
+  window.open("https://go-style.herokuapp.com/", "_blank")
+});
+$('#reelsplexgit').on('click', function(e) {
   window.open("https://github.com/sarita2129/movie_booking_client", "_blank")
 });
-$('#foodie').on('click', function(e) {
+$('#reelsplex').on('click', function(e) {
+  window.open("https://sarita2129.github.io/movie_booking_client/#/home", "_blank")
+});
+$('#foodiegit').on('click', function(e) {
   window.open("https://github.com/sarita2129/Food_delivery_client", "_blank")
 });
-
+$('#foodie').on('click', function(e) {
+  window.open("https://sarita2129.github.io/Food_delivery_client/#/home", "_blank")
+});
 });
