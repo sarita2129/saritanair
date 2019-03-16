@@ -755,10 +755,10 @@ body {
     float: right;
     width: 100%;
   }
-  .cont__inner {
+  /* .cont__inner {
     height: 100%;
     overflow-y: auto;
-  }
+  } */
   .el__bg{
     width: 100%;
   }
