@@ -106,7 +106,7 @@ $('#tictactoegit').on('click', function(e) {
   window.open("https://github.com/sarita2129/projectZero", "_blank")
 });
 $('#tictactoe').on('click', function(e) {
-  window.open("https://sarita2129.github.io/projectZero/login.html", "_blank")
+  window.open("https://sarita2129.github.io/projectZero/", "_blank")
 });
 $('#gostylegit').on('click', function(e) {
   window.open("https://github.com/sarita2129/gostyle", "_blank")
